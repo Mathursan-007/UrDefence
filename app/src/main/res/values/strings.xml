@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mad</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">News</string>
+    <string name="menu_view">View Criminals</string>
+    <string name="menu_emergency">Emergency Contacts</string>
+    <string name="menu_profile">Profile</string>
+    <string name="UrSafe">Ur Safe</string>
+    <string name="Civilian">Welcome Civilian</string>
+</resources>
