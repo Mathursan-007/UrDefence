@@ -10,7 +10,7 @@ public class EmergencyViewModel extends ViewModel {
 
     public EmergencyViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+    //    mText.setValue("This is gallery fragment");
     }
 
     public LiveData<String> getText() {

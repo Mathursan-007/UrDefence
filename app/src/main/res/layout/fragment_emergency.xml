@@ -4,19 +4,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg3"
     tools:context=".ui.EmergencyFragment">
 
-    <TextView
-        android:id="@+id/text_emergency"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="369dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="  Police Emergency"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="263dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" 011-2433333  "
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="369dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="  Fire and Ambulance"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="263dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" 011-2422222  "
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="369dp"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:ignore="">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" Police Head Quarters"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="263dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" 011-2421111  "
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="369dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="  Emergency Police Mobile Squad"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="263dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" 011-5717171  "
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="369dp"
+        android:layout_height="30dp"
+
+        android:layout_marginBottom="100dp"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="   Red Cross"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="263dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" 011-2672727  "
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
