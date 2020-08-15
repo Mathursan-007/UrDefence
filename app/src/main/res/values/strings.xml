@@ -28,4 +28,8 @@
     <string name="deleteaccount">Delete Account</string>
     <string name="logout">Logout</string>
     <string name="title_activity_maps">Alert Zone</string>
+    <string name="msg1">A lady had lost her ATM card near the bus stop, so if anyone find it please inform.</string>
+    <string name="msg">The Police station is searching for the criminal.</string>
+    <string name="incident2">Lost Case</string>
+    <string name="incident1">Searching the criminal</string>
 </resources>

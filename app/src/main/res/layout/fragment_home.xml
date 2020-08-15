@@ -4,20 +4,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:text="Inform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="366dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:ignore="">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="309dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="   City"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="263dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="11/08/2020                                                      7:48 am   "
+                android:textAlignment="textEnd"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginTop="88dp"
+            android:text="@string/msg"
+            android:textAlignment="center"
+            android:textColor="?android:attr/colorForeground"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/incident1"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="366dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:ignore="">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="309dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="   City"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="263dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="11/08/2020                                                       12:00pm   "
+                android:textAlignment="textEnd"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="82dp"
+            android:text="@string/msg1"
+            android:textAlignment="center"
+            android:textColor="?android:attr/colorForeground"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/incident2"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
