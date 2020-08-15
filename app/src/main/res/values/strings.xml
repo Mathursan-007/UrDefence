@@ -32,4 +32,7 @@
     <string name="msg">The Police station is searching for the criminal.</string>
     <string name="incident2">Lost Case</string>
     <string name="incident1">Searching the criminal</string>
+    <string name="title_activity_police_dashboard">PoliceDashboard</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>
