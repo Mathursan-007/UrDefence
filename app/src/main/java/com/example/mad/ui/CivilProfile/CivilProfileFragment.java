@@ -1,4 +1,4 @@
-package com.example.mad.ui.slideshow;
+package com.example.mad.ui.CivilProfile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,23 +8,21 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.mad.R;
-import com.example.mad.ui.home.HomeViewModel;
 
-public class SlideshowFragment extends Fragment {
+public class CivilProfileFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private CivilProfileViewModel civilProfileViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+        civilProfileViewModel =
+                ViewModelProviders.of(this).get(CivilProfileViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_civilprof, container, false);
         final TextView textView1 = root.findViewById(R.id.textView1);
         final TextView textView2 = root.findViewById(R.id.textView2);
         final TextView textView3 = root.findViewById(R.id.textView3);
@@ -36,7 +34,7 @@ public class SlideshowFragment extends Fragment {
         final TextView textView9 = root.findViewById(R.id.textView9);
         final TextView textView10 = root.findViewById(R.id.textView10);
         final TextView textView11 = root.findViewById(R.id.textView11);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        civilProfileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView1.setText(s);

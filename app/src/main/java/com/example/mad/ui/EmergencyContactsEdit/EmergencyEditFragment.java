@@ -1,6 +1,7 @@
-package com.example.mad.ui;
+package com.example.mad.ui.EmergencyContactsEdit;
 
-import android.os.Bundle;
+import
+        android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,17 +14,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.mad.R;
-import com.example.mad.ui.gallery.GalleryViewModel;
 
-public class EmergencyFragment extends Fragment {
 
-    private EmergencyViewModel galleryViewModel;
+public class EmergencyEditFragment extends Fragment {
+
+    private EmergencyEditViewModel EmergencyEditViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(EmergencyViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_emergency, container, false);
+        EmergencyEditViewModel =
+                ViewModelProviders.of(this).get(EmergencyEditViewModel.class);
+        View root = inflater.inflate(R.layout.emergency_contact_edit, container, false);
         final TextView textView = root.findViewById(R.id.textView26);
         final TextView textView1 = root.findViewById(R.id.textView27);
         final TextView textView2 = root.findViewById(R.id.textView28);
@@ -32,7 +33,7 @@ public class EmergencyFragment extends Fragment {
         final TextView textView5 = root.findViewById(R.id.textView31);
         final TextView textView6 = root.findViewById(R.id.textView32);
         final TextView textView7 = root.findViewById(R.id.textView33);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        EmergencyEditViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

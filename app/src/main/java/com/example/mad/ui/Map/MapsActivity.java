@@ -1,4 +1,4 @@
-package com.example.mad.ui;
+package com.example.mad.ui.Map;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -22,7 +22,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.mapfrg);
         mapFragment.getMapAsync(this);
     }
 

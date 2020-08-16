@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg2"
-    tools:context=".ui.home.HomeFragment">
+
+    android:background="@drawable/navy"
+    tools:context=".ui.ViewNews.ViewNewsFragment">
 
     <Button
         android:id="@+id/button2"
@@ -14,7 +15,19 @@
         android:text="Send Alert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.919" />
@@ -22,6 +35,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="366dp"
         android:layout_height="122dp"
+        android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -31,11 +45,11 @@
 
         <LinearLayout
             android:id="@+id/linearLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="92dp"
+            android:layout_width="358dp"
+            android:layout_height="89dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="0dp"
-            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:background="@color/cardview_light_background"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +64,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:text="   City"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColor="@color/design_default_color_on_secondary"
                 android:textSize="16sp" />
 
             <TextView
@@ -61,7 +75,7 @@
                 android:layout_weight="1"
                 android:text="11/08/2020                                                      7:48 am   "
                 android:textAlignment="textEnd"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColor="@color/design_default_color_on_secondary"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -82,7 +96,7 @@
             android:layout_height="25dp"
             android:text="@string/incident1"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColor="@color/cardview_dark_background"
             android:textSize="16sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
@@ -90,6 +104,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="366dp"
         android:layout_height="135dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -103,7 +118,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="0dp"
-            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:background="@color/cardview_light_background"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +133,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:text="   City"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColor="@color/design_default_color_on_secondary"
                 android:textSize="16sp" />
 
             <TextView
@@ -129,7 +144,7 @@
                 android:layout_weight="1"
                 android:text="11/08/2020                                                       12:00pm   "
                 android:textAlignment="textEnd"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColor="@color/design_default_color_on_secondary"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -150,9 +165,34 @@
             android:layout_height="25dp"
             android:text="@string/incident2"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColor="@color/cardview_dark_background"
             android:textSize="16sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorInput"
+        android:checked="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

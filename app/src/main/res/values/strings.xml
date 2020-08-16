@@ -32,11 +32,41 @@
     <string name="msg">The Police station is searching for the criminal.</string>
     <string name="incident2">Lost Case</string>
     <string name="incident1">Searching the criminal</string>
+    <string name="title_activity_police_dashboard">PoliceDashboard</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_policedash">Policedash</string>
 
-    <string name="Email">Username</string>
+    <string name="Station">Welcome Police Station</string>
+
+    <string name="stationid">Station ID</string>
+    <string name="location">Station location</string>
+    <string name="station_name">Kotte Police station</string>
+    <string name="station_location">101, Galle Road Kotte</string>
+    <string name="station_email">kotte@gmail.com</string>
+    <string name="station_phone">0112002002</string>
+
+    <string name="report">Wanted Alerts</string>
+    <string name="reportcriminal">Criminal Name :</string>
+    <string name="report_info">Information :</string>
+    <string name="reportlocation">Tracked Location:</string>
+
+    <string name="criminalName">Criminal Name</string>
+    <string name="criminalAge">Criminal Age</string>
+    <string name="suspectedAreas">Suspected Area</string>
+    <string name="criminalHeight">Criminal Height</string>
+    <string name="lastSeen">Last Seen</string>
+    <string name="addCriminal">Add Criminal</string>
+    <string name="criminalRegistry">Criminal Registration</string>
+    <string name="crimialregister">Criminal Register</string>
+    <string name="Email">Email</string>
     <string name="Pass">Password</string>
-    <string name="signUp">Don\'t have an account?</string>
-    <string name="Login">Login</string>
     <string name="register">Register</string>
+    <string name="signUp">SignUp</string>
+    <string name="Login">Login</string>
+
+
+    <string name="contacts">Hotlines</string>
+
 
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_viewnews"
+            android:icon="@drawable/news"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_criminal_alert"
+            android:icon="@drawable/criminal"
+            android:title="@string/report" />
+        <item
+            android:id="@+id/nav_crreg"
+            android:icon="@drawable/register"
+            android:title="@string/crimialregister" />
+        <item
+            android:id="@+id/nav_prof"
+            android:icon="@drawable/station"
+            android:title="@string/menu_profile" />
+
+        <item
+            android:id="@+id/nav_emergency_edit"
+            android:icon="@drawable/hotlines"
+            android:title="@string/contacts" />
+
+    </group>
+</menu>

@@ -1,16 +1,17 @@
-package com.example.mad.ui.home;
+package com.example.mad.ui.CivilProfile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class CivilProfileViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public CivilProfileViewModel() {
         mText = new MutableLiveData<>();
-     //   mText.setValue("This is home fragment");
+//        mText.setValue("This is slideshow fragment");
+
     }
 
     public LiveData<String> getText() {

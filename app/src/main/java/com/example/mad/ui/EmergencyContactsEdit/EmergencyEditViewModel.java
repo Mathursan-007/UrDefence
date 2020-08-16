@@ -1,14 +1,14 @@
-package com.example.mad.ui.gallery;
+package com.example.mad.ui.EmergencyContactsEdit;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class EmergencyEditViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public EmergencyEditViewModel() {
         mText = new MutableLiveData<>();
     //    mText.setValue("This is gallery fragment");
     }

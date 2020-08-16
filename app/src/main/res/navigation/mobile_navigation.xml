@@ -3,35 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_viewalert">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.mad.ui.home.HomeFragment"
+        android:id="@+id/nav_viewalert"
+        android:name="com.example.mad.ui.Alert.AlertFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_maps"
-        android:name="com.example.mad.ui.MapsActivity"
-        android:label="@string/title_activity_maps"
-        tools:layout="@layout/activity_maps" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.mad.ui.gallery.GalleryFragment"
-        android:label="@string/menu_view"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_alert" />
 
     <fragment
         android:id="@+id/nav_emergency"
-        android:name="com.example.mad.ui.EmergencyFragment"
+        android:name="com.example.mad.ui.Emergency.EmergencyFragment"
         android:label="@string/menu_emergency"
         tools:layout="@layout/fragment_emergency" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.mad.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_profile"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_maps"
+        android:name="com.example.mad.ui.Map.MapsFragment"
+        android:label="Alert Zone"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/nav_civilprof"
+        android:name="com.example.mad.ui.CivilProfile.CivilProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_civilprof" />
+    <fragment
+        android:id="@+id/nav_wanted"
+        android:name="com.example.mad.ui.Wanted.WantedFragment"
+        android:label="Wanted List"
+        tools:layout="@layout/wanted" />
 </navigation>

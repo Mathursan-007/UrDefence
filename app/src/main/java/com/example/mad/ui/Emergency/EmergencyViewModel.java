@@ -1,4 +1,4 @@
-package com.example.mad.ui;
+package com.example.mad.ui.Emergency;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
