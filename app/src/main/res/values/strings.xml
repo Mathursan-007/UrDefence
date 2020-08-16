@@ -39,4 +39,12 @@
     <string name="Login">Login</string>
     <string name="register">Register</string>
 
+    <string name="civilian">Civilian Registration</string>
+    <string name="emailAdd">Email address</string>
+    <string name="contact">Contact number</string>
+    <string name="confirmPass">Confirm password</string>
+    <string name="stationId">Station ID</string>
+    <string name="sLocation">Station location</string>
+    <string name="policeReg">Police Station Registration</string>
+
 </resources>

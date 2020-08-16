@@ -1,14 +1,14 @@
 package com.example.mad;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class CitizenRegister extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class PoliceStationRegister extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_citizen_register);
+        setContentView(R.layout.police_station_register);
     }
 }
