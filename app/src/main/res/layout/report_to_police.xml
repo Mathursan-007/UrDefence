@@ -11,9 +11,10 @@
         android:id="@+id/addno"
         android:layout_width="108dp"
         android:layout_height="58dp"
-        android:layout_marginStart="181dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="104dp"
         android:background="@color/colorBtn"
         android:fontFamily="sans-serif-light"
         android:text="@string/reportcriminial"
@@ -22,8 +23,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <TextView
         android:id="@+id/textView"
