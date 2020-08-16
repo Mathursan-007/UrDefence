@@ -82,11 +82,9 @@
         android:id="@+id/linearLayout4"
         android:layout_width="369dp"
         android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
         android:background="@color/cardview_light_background"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
@@ -150,80 +148,41 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="369dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="70dp"
-        android:background="@color/cardview_light_background"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        tools:ignore="">
-
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="254dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="   Red Cross"
-            android:textColor="@color/cardview_dark_background"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="263dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text=" 011-2672727  "
-            android:textAlignment="center"
-            android:textColor="@color/cardview_dark_background"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/addno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="132dp"
         android:background="#00FF05"
         android:text="add"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/editno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="93dp"
         android:background="#2196F3"
         android:text="edit"
         android:textColor="#F3F3F3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/dltno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="132dp"
         android:background="#EA2239"
         android:text="delete"
         android:textColor="#FBF1F1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

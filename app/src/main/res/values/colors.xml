@@ -11,5 +11,6 @@
     <color name="colorDarkBlue">#07184B</color>
     <color name="colorWhiteTrans">#AEFFFFFF</color>
     <color name="colorGrey">#C6736E6E</color>
+    <color name="colorBtn">#03A9F4</color>
 
 </resources>

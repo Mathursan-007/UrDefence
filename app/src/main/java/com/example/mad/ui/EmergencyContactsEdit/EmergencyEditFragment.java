@@ -1,10 +1,12 @@
 package com.example.mad.ui.EmergencyContactsEdit;
 
+import android.content.Intent;
 import
         android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.mad.AddEmergency;
 import com.example.mad.R;
 
 
@@ -46,6 +49,32 @@ public class EmergencyEditFragment extends Fragment {
                 textView7.setText(s);
             }
         });
+
+        Button add=root.findViewById(R.id.addno);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), AddEmergency.class));
+            }
+        });
+
+        Button edit=root.findViewById(R.id.editno);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        Button dlt=root.findViewById(R.id.dltno);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+
         return root;
     }
 }
