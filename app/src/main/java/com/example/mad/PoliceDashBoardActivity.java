@@ -38,7 +38,7 @@ public class PoliceDashBoardActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_viewnews,R.id.nav_criminal_alert, R.id.nav_crreg,R.id.nav_prof)
+                R.id.nav_viewnews,R.id.nav_criminal_alert, R.id.nav_crreg,R.id.nav_prof,R.id.nav_emergency_edit)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_police_host_fragment);
