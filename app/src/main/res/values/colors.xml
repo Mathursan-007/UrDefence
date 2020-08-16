@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#03A9F4</color>
 
     <color name="colorInput">#FFFFFF</color>
     <color name="textColor">#FFFFFF</color>
@@ -11,4 +11,6 @@
     <color name="colorDarkBlue">#07184B</color>
     <color name="colorWhiteTrans">#AEFFFFFF</color>
     <color name="colorGrey">#C6736E6E</color>
+
+    <color name="colorBtn">#FF03A9F4</color>
 </resources>
