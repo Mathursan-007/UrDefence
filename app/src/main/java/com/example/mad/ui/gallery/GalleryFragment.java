@@ -23,11 +23,19 @@ public class GalleryFragment extends Fragment {
         galleryViewModel =
                 ViewModelProviders.of(this).get(GalleryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
+        final TextView textView = root.findViewById(R.id.textView);
+        final TextView textView1 = root.findViewById(R.id.textView2);
+        final TextView textView2 = root.findViewById(R.id.textView3);
+        final TextView textView3 = root.findViewById(R.id.textView4);
+        final TextView textView4 = root.findViewById(R.id.textView5);
         galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
+                textView1.setText(s);
+                textView2.setText(s);
+                textView3.setText(s);
+                textView4.setText(s);
             }
         });
         return root;

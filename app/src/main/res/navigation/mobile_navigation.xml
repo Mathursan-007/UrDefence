@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_maps"
         android:name="com.example.mad.ui.MapsActivity"
-        android:label="@string/menu_view"
+        android:label="@string/title_activity_maps"
         tools:layout="@layout/activity_maps" />
 
     <fragment
