@@ -27,7 +27,7 @@ public class CriminalProfile extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         wantedViewModel =
                 ViewModelProviders.of(this).get(WantedViewModel.class);
-        View root = inflater.inflate(R.layout.wanted, container, false);
+        View root = inflater.inflate(R.layout.criminal_profile_fragment, container, false);
         final TextView textView = root.findViewById(R.id.textView);
         final TextView textView1 = root.findViewById(R.id.textView2);
         final TextView textView2 = root.findViewById(R.id.textView3);
