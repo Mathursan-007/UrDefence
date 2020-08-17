@@ -26,5 +26,10 @@
             android:icon="@drawable/hotlines"
             android:title="@string/contacts" />
 
+        <item
+            android:id="@+id/nav_criminal_prof"
+            android:icon="@drawable/criminals"
+            android:title="@string/criminals" />
+
     </group>
 </menu>

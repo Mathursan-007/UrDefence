@@ -83,5 +83,10 @@
     <string name="enterlocation">Enter Location :</string>
     <string name="reportcriminial">Report</string>
     <string name="tittle">Title :</string>
+    <string name="alert">Send Alert</string>
+    <string name="dltcrim">Delete</string>
+    <string name="edt">Edit</string>
+
+    <string name="criminals">Criminal Profiles</string>
 
 </resources>

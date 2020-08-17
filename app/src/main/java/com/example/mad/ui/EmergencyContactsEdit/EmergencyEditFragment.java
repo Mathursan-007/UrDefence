@@ -50,7 +50,7 @@ public class EmergencyEditFragment extends Fragment {
             }
         });
 
-        Button add=root.findViewById(R.id.addno);
+        Button add=root.findViewById(R.id.dlt);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

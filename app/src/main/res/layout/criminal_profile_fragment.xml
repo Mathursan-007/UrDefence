@@ -2,16 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/navy"
-    tools:context=".ui.Wanted.WantedFragment">
+    tools:context=".ui.CriminalProfile.CriminalProfile">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="406dp"
         android:layout_height="526dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +65,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="@font/audiowide"
         android:text="Area   :"
         android:textColor="@android:color/background_dark"
@@ -79,7 +80,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/audiowide"
         android:text="Case   :"
         android:textColor="@android:color/background_dark"
@@ -92,17 +93,30 @@
 
     <Button
         android:id="@+id/dlt"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="99dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="196dp"
         android:background="@android:color/holo_blue_dark"
-        android:text="Report"
+        android:text="@string/dltcrim"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/addno2"
+        android:layout_width="94dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/edt"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/dlt"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
@@ -119,4 +133,5 @@
         app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

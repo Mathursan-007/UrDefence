@@ -8,6 +8,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.view.Menu;
 
@@ -38,12 +39,14 @@ public class PoliceDashBoardActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_viewnews,R.id.nav_criminal_alert, R.id.nav_crreg,R.id.nav_prof,R.id.nav_emergency_edit)
+                R.id.nav_viewnews,R.id.nav_criminal_alert, R.id.nav_crreg,R.id.nav_prof,R.id.nav_emergency_edit,R.id.nav_criminal_prof)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_police_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
 
     }
 
@@ -55,6 +58,7 @@ public class PoliceDashBoardActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.police_dashboard, menu);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view2);
 
+
         return true;
     }
 
@@ -65,5 +69,6 @@ public class PoliceDashBoardActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration) || super.onSupportNavigateUp();
 
     }
+
 
 }

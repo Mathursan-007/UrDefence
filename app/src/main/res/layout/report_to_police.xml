@@ -8,7 +8,7 @@
     tools:context=".Report_toPolice">
 
     <Button
-        android:id="@+id/addno"
+        android:id="@+id/dlt"
         android:layout_width="108dp"
         android:layout_height="58dp"
         android:layout_marginStart="151dp"
