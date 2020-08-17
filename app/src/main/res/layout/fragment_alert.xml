@@ -22,7 +22,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="366dp"
         android:layout_height="122dp"
-        app:cardBackgroundColor="#2196F3"
+        app:cardBackgroundColor="@color/colorInput"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -36,7 +36,7 @@
             android:layout_height="92dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="0dp"
-            android:background="#03A9F4"
+            android:background="@color/colorInput"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,6 @@
                 android:layout_height="32dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
-                android:background="#417FB1"
                 android:text="   City"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="16sp" />
